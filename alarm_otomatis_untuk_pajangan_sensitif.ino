@@ -38,12 +38,12 @@ void loop(){
     lcd.setCursor (0,0);
     lcd.print ("JAUHKAN TANGANMU!   ");
     lcd.setCursor (0,1);
-    lcd.print ("DILARANG MENDEKAT   ");
+    lcd.print ("JANGAN MENDEKAT   ");
     tone (buzzer , 1000);
   }else {
     myservo.write (0);
     lcd.setCursor (0,0);
-    lcd.print ("DILARANG MENDEKAT   ");
+    lcd.print ("JANGAN MENDEKAT   ");
     lcd.setCursor (0,1);
     lcd.print ("BENDA SENSITIF!     ");
     noTone (buzzer);
