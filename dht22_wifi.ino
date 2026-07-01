@@ -8,8 +8,8 @@ DHT dht (DHTPIN, DHTTYPE);
 const char * ssid = "Wokwi-GUEST";
 const char * password = "";
 
-String botToken = "8100923858:AAGk5Vi5J2rhvRUY9m5Wh7AqqmzLXy9Hbtw";
-String chatId = "1006011526";
+String botToken = "kodedribottoken";
+String chatId = "kodedarichatid";
 
 bool notifikasiTerkirim = false;
 
