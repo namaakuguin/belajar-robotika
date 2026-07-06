@@ -101,6 +101,7 @@ void aksesDitolak (){ //ketika pin salah
       tone (buzzer,1200);
       delay (300);
     }
+    noTone (buzzer);
     salahSistem = 0;
   }else {
     tone (buzzer,400,1000);
