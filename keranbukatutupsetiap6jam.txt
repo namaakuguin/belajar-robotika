@@ -1,0 +1,26 @@
+input sensor  rtc ds3231
+output lcd
+output servo
+output buzzer
+inisiasi pin dan library lcd,servo,buzzer,dan rtc ds3231
+variabel keranBuka = false
+
+setup komponen
+	instalisasi lcd ke esp32
+	definisikan servo analog dengan pin
+	panggil buzzer sebagai output
+	definisikan waktu kedalam rtc
+
+looping
+	inisiasi rtc ds3231 untuk memanggil waktu sekarang
+	lcd tampilkan layar waktu secara realtime
+	jika (waktu jam 06 am, 12am ,18pm) dan (menit ke0) dan (detik ke 0)
+		servo gerak 90
+		buzzer bip 0.2s
+		lcd menampilkan teks "Keran air terbuka"
+		keranBuka =true
+	jika (waktu jam 06 am,12am, 18pm) dan (menit ke0) dan (detik ke 25)
+		servo kembali ke 0
+		buzzer mati
+		lcd menampilkan teks "keran air tertutup"
+		keranBuka = false
